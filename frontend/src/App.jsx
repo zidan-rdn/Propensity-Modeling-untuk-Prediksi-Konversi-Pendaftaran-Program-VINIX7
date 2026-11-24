@@ -9,7 +9,7 @@ fetch(`${API}/dashboard`);
 fetch(`${API}/analytics`);
 
 const PAGE_NAMES = [
-  'Dashboard',
+'Dashboard',
   'Data Responden',
   'Analisis Data',
   'Prediksi Konversi',
