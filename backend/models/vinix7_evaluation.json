@@ -1,0 +1,24 @@
+{
+    "algorithm": "Logistic Regression",
+    "dataset": "Konsultasi Karir-9Nov26.xlsx",
+    "total_responden": 2988,
+    "training_samples": 2390,
+    "testing_samples": 598,
+    "features": [
+        "Perguruan Tinggi",
+        "Program Studi",
+        "IPK",
+        "Semester",
+        "Motivasi",
+        "Tempat Magang"
+    ],
+    "target": "Ikut Program VINIX7?",
+    "accuracy": 0.6254180602006689,
+    "balanced_accuracy": 0.6043956043956044,
+    "precision": 0.6124721603563474,
+    "recall": 0.8461538461538461,
+    "f1_score": 0.710594315245478,
+    "roc_auc": 0.6485094392786701,
+    "log_loss": 0.6555010307104663,
+    "brier_score": 0.23123040834815678
+}
