@@ -14,7 +14,8 @@ from pydantic import BaseModel, Field
 # ==========================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
-DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Konsultasi Karir-9Nov26.xlsx")
+DATA_PATH = os.path.join(BASE_DIR, "data", "Konsultasi Karir-9Nov26.xlsx")
+# DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Konsultasi Karir-9Nov26.xlsx")
 MODEL_PATH = os.path.join(MODEL_DIR, "vinix7_logistic_model.joblib")
 EVALUATION_PATH = os.path.join(MODEL_DIR, "vinix7_evaluation.json")
 
@@ -26,8 +27,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "http://localhost:5173",
         "https://propensity-modeling-untuk-prediksi-hazel.vercel.app", 
-        "http://localhost:5173"
     ],
     allow_credentials=True,
     allow_methods=["*"],

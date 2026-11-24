@@ -19,7 +19,8 @@ from sklearn.metrics import (
 # 1. KONFIGURASI
 # ==========================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Konsultasi Karir-9Nov26.xlsx")
+DATA_PATH = os.path.join(BASE_DIR, "data", "Konsultasi Karir-9Nov26.xlsx")
+# DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Konsultasi Karir-9Nov26.xlsx")
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 os.makedirs(MODEL_DIR, exist_ok=True)
 MODEL_PATH = os.path.join(MODEL_DIR, "vinix7_logistic_model.joblib")
