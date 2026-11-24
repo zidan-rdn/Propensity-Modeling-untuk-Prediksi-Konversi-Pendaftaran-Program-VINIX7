@@ -270,17 +270,6 @@ const handlePredict = async (e) => {
                 description="Rata-rata skor responden"
               />
 
-              <StatCard
-                icon="↗"
-                title="Akurasi Model"
-                value={
-                  dashboard
-                    ? `${dashboard.akurasi_model}%`
-                    : '...'
-                }
-                description="Evaluasi data pengujian"
-              />
-
             </div>
 
           </section>
