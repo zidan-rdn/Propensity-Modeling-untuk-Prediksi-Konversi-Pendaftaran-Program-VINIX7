@@ -28,7 +28,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://propensity-modeling-untuk-prediksi-hazel.vercel.app", 
+        "https://propensity-modeling-untuk-prediksi.vercel.app", 
     ],
     allow_credentials=True,
     allow_methods=["*"],
